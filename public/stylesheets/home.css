@@ -1,0 +1,113 @@
+html{
+    height: 100%;
+}
+
+body{
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    padding: 0;
+    background-image: url(../images/home2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+span{
+    display: block;
+    margin-left: 5px;
+}
+
+.a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(21, 128, 87);
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+    transition: 0.3s;
+}
+
+.a:hover{
+    background-color: rgb(207, 207, 207);
+    color: rgb(28, 179, 121);
+}
+
+.card{
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    width:500px;
+    height:500px;
+    margin-top: -250px; /*set to a negative number 1/2 of your height*/
+    margin-left: -250px; /*set to a negative number 1/2 of your width*/
+    border-radius: 10px;
+    background: linear-gradient(150deg, #ffffffb6, #ffffff00 100%);
+    box-shadow: 0px 0px 10px 1px  rgb(94, 94, 94);
+}
+
+h3{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+}
+
+h1{
+    text-align: center;
+    text-transform:capitalize;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+.form{
+    margin-top: 100px;
+}
+
+.button1{
+    align-items: center;
+    text-align: center;
+    margin-left: 125px;
+    margin-top: 50px;
+    height: 40px;
+    width: 250px;
+    border: 0px solid rgb(104, 143, 119);
+    border-radius: 10px;
+    background-color: rgba(33, 189, 142, 0.822);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.button1:hover{
+    background-color: rgb(0, 134, 94);
+}
+
+.button2{
+    align-items: center;
+    text-align: center;
+    margin-left: 125px;
+    margin-top: 20px;
+    height: 40px;
+    width: 250px;
+    border: 0px solid rgb(104, 143, 119);
+    border-radius: 10px;
+    background-color: rgba(49, 135, 185, 0.767);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.button2:hover{
+    background-color: rgb(0, 88, 139);
+}
+

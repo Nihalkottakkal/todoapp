@@ -1,0 +1,106 @@
+body{
+    align-items: center;
+    text-align: center;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width:1000px;
+    height:500px;
+    margin-top: -250px; /*set to a negative number 1/2 of your height*/
+    margin-left: -500px; /*set to a negative number 1/2 of your width*/
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+.bg{
+    background-image: url(../images/bg2.jpg);
+    height: 450px;
+    width: 475px;
+    border-radius: 10px 0px 0px 10px; 
+    margin-top: 25px; 
+    margin-left: 25px;
+    margin-right: 0%;
+    float: left;
+}
+
+.text{
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 120px;
+    
+}
+
+.text,h4{
+    color: rgb(214, 212, 212);
+    font-size: 30px;
+    
+}
+
+.text,h1{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form{
+    height: 450px;
+    width: 475px;
+    float: right;
+    margin-top: 25px;  
+    margin-left: 0%;
+    margin-bottom: 30px;
+    
+}
+
+p{
+    font-size: 17px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+a{
+    color: rgb(35, 190, 113);
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(23, 161, 92);
+}
+
+.h1{
+    color: black;
+    margin-top: 55px;
+    margin-bottom: 0;
+    
+}
+
+input{
+    height: 40px;
+    width: 400px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 5px;
+}
+
+button{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    width: 410px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(70, 165, 117);
+    transition: 0.3s;
+}
+button:hover{
+    background-color: rgb(35, 190, 113);
+}

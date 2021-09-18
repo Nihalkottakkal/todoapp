@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="/stylesheets/login.css">
+    </head>
+
+    <body>
+        <div class="main">
+
+            <div class="bg">
+                <div class="text">
+                    <h4>Welcome to</h4>
+                    <h1>ToDoApp</h1>
+                </div>
+            </div>
+
+            <div class="form">
+                <h1 class="h1">LOGIN</h1>
+                <p>Create an account?
+                    <a href="signup">Sign-Up</a>
+                </p>
+                
+                <form method="POST" action="/login" onsubmit="return validation()">
+                    <input required type="text" placeholder="Username" name="username" id="username"><br><br>
+                    <input required type="password" placeholder="Password" name="password" id="password"><br><br>
+                    <button>LOGIN</button>
+                </form>
+            </div>
+        </div>
+
+    <script>
+        function validation() {
+
+            var pass = document.getElementById('password')
+            var confirmp = document.getElementById('confirmpass')
+
+            if(pass.value.length<8)
+            {
+                alert('password must include atleast 8 characters')
+                return false
+            }
+            else if (pass.value!==confirmp.value)
+            {
+                alert("incorrect password");
+                return false
+            }
+            else
+            {
+                return true
+            }
+
+        }
+        
+    </script>
+
+        
+
+
+    </body>
+
+</html>

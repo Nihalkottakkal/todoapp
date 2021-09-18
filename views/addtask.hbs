@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/stylesheets/addtask.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <p>
+                <a href="home" class="a">ToDo<span>App</span></a>
+            </p>
+        </div>
+
+        <div class="card">
+
+            <div class="form">
+
+                <h2>Add Task</h2>
+
+                <form method="POST" action="/addtask">
+                    <input hidden  type="textarea"  name="added on" id="dateadded"><br><br>
+                    <input required type="text" placeholder="Task" name="task" id="task"><br><br>
+                    <input required type="date" placeholder="Date" name="date" id="date"><br><br>
+                    <input type="time" placeholder="Time" name="time" id="time"><br><br>
+                    <textarea placeholder="Description" name="description" id="description" cols="61" rows="10"></textarea><br><br>
+                    <button>
+                        Add
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+        
+
+
+        <script>
+            document.getElementById('dateadded').value = new Date().getDate() + "/" + (new Date().getMonth()+1) + "/" + new Date().getFullYear() + "  " + new Date().getHours() + ":" + new Date().getMinutes()
+            const date = document.getElementById('date').value
+            if (date)
+            {
+                alert(date)
+                
+            }
+            else
+            {
+                
+            }
+        </script>
+
+    </body>
+</html>
